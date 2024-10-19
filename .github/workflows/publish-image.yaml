@@ -17,4 +17,4 @@ jobs:
     uses: Greboh-school/shared-pipelines/.github/workflows/dotnet-service-image-publish.yaml@main
     secrets: inherit
     with:
-      repository: "services-authentication"
+      repository: "services-registry"
