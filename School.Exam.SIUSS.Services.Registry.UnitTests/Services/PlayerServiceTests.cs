@@ -189,7 +189,7 @@ public class PlayerServiceTests : TestBase
         // Assert
         await result.Should()
             .ThrowExactlyAsync<NotFoundException>()
-            .WithMessage("Failed to find server with provided id: {serverId}");
+            .WithMessage($"Failed to find server with provided id: {id}");
     }
 
     [Fact]
