@@ -6,17 +6,17 @@ ARG NUGET_USERNAME
 ARG NUGET_TOKEN
 ARG version
 
-COPY ["School.Exam.SIUSS.Services.Authentication/School.Exam.SIUSS.Services.Authentication.csproj", "School.Exam.SIUSS.Services.Authentication/"]
-COPY ["NuGet.config", "School.Exam.SIUSS.Services.Authentication/"]
+COPY ["School.Exam.SIUSS.Services.Registry/School.Exam.SIUSS.Services.Registry.csproj", "School.Exam.SIUSS.Services.Registry/"]
+COPY ["NuGet.config", "School.Exam.SIUSS.Services.Registry/"]
 
-RUN dotnet restore "School.Exam.SIUSS.Services.Authentication/School.Exam.SIUSS.Services.Authentication.csproj" --configfile School.Exam.SIUSS.Services.Authentication/NuGet.config
+RUN dotnet restore "School.Exam.SIUSS.Services.Registry/School.Exam.SIUSS.Services.Registry.csproj" --configfile School.Exam.SIUSS.Services.Registry/NuGet.config
 
 COPY . .
 
-RUN dotnet publish "School.Exam.SIUSS.Services.Authentication/School.Exam.SIUSS.Services.Authentication.csproj" -c Release -o out /p:Version=$version
+RUN dotnet publish "School.Exam.SIUSS.Services.Registry/School.Exam.SIUSS.Services.Registry.csproj" -c Release -o out /p:Version=$version
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 
 WORKDIR /app
 
 COPY --from=build /src/out .
-ENTRYPOINT ["dotnet", "School.Exam.SIUSS.Services.Authentication.dll"]
+ENTRYPOINT ["dotnet", "School.Exam.SIUSS.Services.Registry.dll"]

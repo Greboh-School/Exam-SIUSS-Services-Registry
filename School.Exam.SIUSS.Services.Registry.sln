@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Exam.SIUSS.Services.Registry", "School.Exam.SIUSS.Services.Registry\School.Exam.SIUSS.Services.Registry.csproj", "{E1E3C5BC-0BE8-480D-9B59-04D31033433A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Exam.SIUSS.Services.Registry.Models", "School.Exam.SIUSS.Services.Registry.Models\School.Exam.SIUSS.Services.Registry.Models.csproj", "{22257462-26B1-48D5-8894-30F611FD2AB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2F1FAB0C-22A4-4FF2-9373-D1D8197D1BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Exam.SIUSS.Services.Registry.UnitTests", "School.Exam.SIUSS.Services.Registry.UnitTests\School.Exam.SIUSS.Services.Registry.UnitTests.csproj", "{91B702AF-05C8-4B0A-AD42-440764CD1AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Exam.SIUSS.Services.Registry.IntegrationTests", "School.Exam.SIUSS.Services.Registry.IntegrationTests\School.Exam.SIUSS.Services.Registry.IntegrationTests.csproj", "{927CAE2C-7232-41C3-8811-DF896777BEA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D1B83AD-422D-46EF-A529-AE0EEB5EFB20}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1E3C5BC-0BE8-480D-9B59-04D31033433A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E3C5BC-0BE8-480D-9B59-04D31033433A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E3C5BC-0BE8-480D-9B59-04D31033433A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E3C5BC-0BE8-480D-9B59-04D31033433A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22257462-26B1-48D5-8894-30F611FD2AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22257462-26B1-48D5-8894-30F611FD2AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22257462-26B1-48D5-8894-30F611FD2AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22257462-26B1-48D5-8894-30F611FD2AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B702AF-05C8-4B0A-AD42-440764CD1AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B702AF-05C8-4B0A-AD42-440764CD1AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B702AF-05C8-4B0A-AD42-440764CD1AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B702AF-05C8-4B0A-AD42-440764CD1AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927CAE2C-7232-41C3-8811-DF896777BEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927CAE2C-7232-41C3-8811-DF896777BEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927CAE2C-7232-41C3-8811-DF896777BEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927CAE2C-7232-41C3-8811-DF896777BEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91B702AF-05C8-4B0A-AD42-440764CD1AE4} = {2F1FAB0C-22A4-4FF2-9373-D1D8197D1BA9}
+		{927CAE2C-7232-41C3-8811-DF896777BEA0} = {2F1FAB0C-22A4-4FF2-9373-D1D8197D1BA9}
+	EndGlobalSection
+EndGlobal
