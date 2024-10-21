@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.SIUSS.Services.Registry", "Exam.SIUSS.Services.Registry\Exam.SIUSS.Services.Registry.csproj", "{0EADBA7E-8BA2-42E3-A132-47C5558492D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29D20E22-3EE2-4EF6-AA21-12407768A372} = {29D20E22-3EE2-4EF6-AA21-12407768A372}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.SIUSS.Services.Registry.Models", "Exam.SIUSS.Services.Registry.Models\Exam.SIUSS.Services.Registry.Models.csproj", "{29D20E22-3EE2-4EF6-AA21-12407768A372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EADBA7E-8BA2-42E3-A132-47C5558492D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EADBA7E-8BA2-42E3-A132-47C5558492D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EADBA7E-8BA2-42E3-A132-47C5558492D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EADBA7E-8BA2-42E3-A132-47C5558492D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D20E22-3EE2-4EF6-AA21-12407768A372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D20E22-3EE2-4EF6-AA21-12407768A372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D20E22-3EE2-4EF6-AA21-12407768A372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D20E22-3EE2-4EF6-AA21-12407768A372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2672B959-7FEF-49B5-9A2D-25841B877AA9}
+	EndGlobalSection
+EndGlobal
