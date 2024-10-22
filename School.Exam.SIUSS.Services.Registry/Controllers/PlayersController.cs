@@ -13,8 +13,6 @@ public class PlayersController(IPlayerService playerService) : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(PlayerDTO))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize("game:user")]
-
     public async Task<ActionResult<PlayerDTO>> Create([FromBody] PlayerConnectionRequest request)
     {
         var result = await playerService.Create(request);
@@ -27,7 +25,6 @@ public class PlayersController(IPlayerService playerService) : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [Authorize("game:user")]
-
     public async Task<ActionResult<PlayerDTO>> CreateWithServerId([FromRoute] Guid serverId, [FromBody] PlayerConnectionRequest request)
     {
         var result = await playerService.CreateWithServerId(serverId, request);
@@ -38,6 +35,7 @@ public class PlayersController(IPlayerService playerService) : ControllerBase
     [HttpGet("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PlayerDTO))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [Authorize("game:user")]
     public ActionResult<PlayerDTO> Get([FromRoute] Guid id)
     {
         var result = playerService.Get(id);
