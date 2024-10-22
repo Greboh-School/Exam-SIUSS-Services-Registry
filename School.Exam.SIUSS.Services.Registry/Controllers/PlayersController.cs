@@ -8,12 +8,12 @@ namespace School.Exam.SIUSS.Services.Registry.Controllers;
 
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
-[Authorize("game:user")]
 public class PlayersController(IPlayerService playerService) : ControllerBase
 {
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(PlayerDTO))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [Authorize("game:user")]
     public async Task<ActionResult<PlayerDTO>> Create([FromBody] PlayerConnectionRequest request)
     {
         var result = await playerService.Create(request);
