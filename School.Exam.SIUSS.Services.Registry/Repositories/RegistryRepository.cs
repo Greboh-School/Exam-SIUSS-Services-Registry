@@ -22,8 +22,10 @@ public interface IRegistryRepository
     public Task AddPlayer(PlayerEntity entity);
     public PlayerEntity? GetPlayer(Guid userId);
     public Task DeletePlayer(Guid id);
+    public PlayerEntity? GetPlayerByUserName(string username);
 
     #endregion
+
 }
 
 public class RegistryRepository(IMemoryCache cache) : IRegistryRepository
@@ -182,6 +184,13 @@ public class RegistryRepository(IMemoryCache cache) : IRegistryRepository
         cache.Set(_PLAYER_KEY, players);
         cache.Set(_SERVER_KEY, servers);
     }
-    
+
+    public PlayerEntity? GetPlayerByUserName(string username)
+    {
+        var entity = cache.Get<List<PlayerEntity>>(_PLAYER_KEY)?.FirstOrDefault(x => x.UserName == username);
+
+        return entity;
+    }
+
     #endregion
 }
